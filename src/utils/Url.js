@@ -1,0 +1,1 @@
+export const baseUrl = 'https://stage.api.sloovi.com/';
