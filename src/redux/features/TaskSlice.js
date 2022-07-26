@@ -9,6 +9,7 @@ const initialState = {
 export const FetchTasks = createAsyncThunk(
   "fetchUsers",
   async (actions, thunkAPI) => {
+    // console.log(thunkAPI);
     let companyId = localStorage.getItem("companyId");
     return axiosClient
       .get(`team?product=outreach&company_id=${JSON.parse(companyId)}`)
